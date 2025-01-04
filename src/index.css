@@ -1,5 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #282726;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.header-container {
+  height: 300px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1.header-title {
+  color: #f9f4da;
+  font-family: Hanken Grotesk, sans-serif;
+}
+
+p.header-info {
+  color: #f9f4da;
+  text-align: center;
+  font-family: Hanken Grotesk, sans-serif;
 }
