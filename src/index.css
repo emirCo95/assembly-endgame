@@ -18,7 +18,7 @@ main {
   flex-direction: column;
 }
 
-div.header-container {
+header.header-container {
   height: 300px;
   width: 320px;
   display: flex;
@@ -31,10 +31,13 @@ div.header-container {
 h1.header-title {
   color: #f9f4da;
   font-family: Hanken Grotesk, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 p.header-info {
-  color: #f9f4da;
+  color: #8e8e8e;
   text-align: center;
   font-family: Hanken Grotesk, sans-serif;
+  font-size: 0.875rem;
 }
