@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Language from './components/Language';
 import Status from './components/Status';
 import Word from './components/Word';
+import Keyboard from './components/Keyboard';
 
 import { languages } from './utils/languages';
 
@@ -27,6 +28,7 @@ const App = () => {
       <Status />
       <section className="language-container">{languageElements}</section>
       <Word word={currentWord} />
+      <Keyboard />
     </main>
   );
 };
