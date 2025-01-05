@@ -1,4 +1,6 @@
+/* eslint-disable react/prop-types */
 const Language = (props) => {
+  console.log(props);
   const styles = {
     backgroundColor: props.backgroundColor,
     color: props.color,
