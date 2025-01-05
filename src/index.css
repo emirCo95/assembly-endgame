@@ -43,7 +43,7 @@ p.header-info {
   font-size: 15px;
 }
 
-div.status-container {
+section.status-container {
   width: 350px;
   height: 60px;
   display: flex;
@@ -55,12 +55,12 @@ div.status-container {
   color: #f9f4da;
 }
 
-div.status-container > h1 {
-  font-size: 1.5rem;
+section.status-container > h1 {
+  font-size: 1.25rem;
   font-family: Hanken Grotesk, sans-serif;
 }
 
-div.status-container > p {
+section.status-container > p {
   font-size: 0.875rem;
   font-family: Hanken Grotesk, sans-serif;
   text-align: center;
