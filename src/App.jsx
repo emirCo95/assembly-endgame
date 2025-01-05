@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Header from './components/Header';
 import Language from './components/Language';
@@ -9,7 +9,13 @@ import Keyboard from './components/Keyboard';
 import { languages } from './utils/languages';
 
 const App = () => {
-  const [currentWord, setCurrentWord] = useState('react');
+  const [currentWord, setCurrentWord] = useState('');
+
+  useEffect(() => {
+    fetch('https://random-word-api.herokuapp.com/word')
+      .then((res) => res.json())
+      .then((data) => setCurrentWord(data[0]));
+  }, []);
 
   const languageElements = languages.map((language, idx) => {
     return (
