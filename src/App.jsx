@@ -4,18 +4,18 @@ import Status from './components/Status';
 
 import { languages } from './utils/languages';
 
-const languageElements = languages.map((language, idx) => {
-  return (
-    <Language
-      key={idx}
-      name={language.name}
-      backgroundColor={language.backgroundColor}
-      color={language.color}
-    />
-  );
-});
-
 const App = () => {
+  const languageElements = languages.map((language, idx) => {
+    return (
+      <Language
+        key={idx}
+        name={language.name}
+        backgroundColor={language.backgroundColor}
+        color={language.color}
+      />
+    );
+  });
+
   return (
     <main>
       <Header />
