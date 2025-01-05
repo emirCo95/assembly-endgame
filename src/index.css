@@ -65,3 +65,23 @@ section.status-container > p {
   font-family: Hanken Grotesk, sans-serif;
   text-align: center;
 }
+
+section.language-container {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+div.language-box {
+  padding: 5px;
+  width: auto;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Hanken Grotesk, sans-serif;
+  display: flex;
+  align-items: center;
+}

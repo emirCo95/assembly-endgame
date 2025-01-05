@@ -20,7 +20,7 @@ const App = () => {
     <main>
       <Header />
       <Status />
-      {languageElements}
+      <section className="language-container">{languageElements}</section>
     </main>
   );
 };
