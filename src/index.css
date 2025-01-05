@@ -86,7 +86,7 @@ div.language-box {
   align-items: center;
 }
 
-div.word-container {
+section.word-container {
   width: auto;
   display: flex;
   align-items: center;
