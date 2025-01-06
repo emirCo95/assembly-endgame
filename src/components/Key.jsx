@@ -2,8 +2,8 @@
 const Key = (props) => {
   return (
     <button
-      onClick={() => console.log(props.char)}
-      className="keyboard-character"
+      onClick={() => props.charClicked()}
+      className={`keyboard-character ${props.className}`}
     >
       {props.char.toUpperCase()}
     </button>

@@ -94,7 +94,7 @@ section.word-container {
   gap: 10px;
 }
 
-span.word-character {
+div.word-character-container {
   width: 40px;
   height: 40px;
   padding: 6px;
@@ -103,6 +103,9 @@ span.word-character {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #f9f4da;
+}
+
+span.word-character {
   font-size: 18px;
   font-family: Hanken Grotesk, sans-serif;
   font-weight: 700;
@@ -122,7 +125,6 @@ button.keyboard-character {
   width: 40px;
   height: 40px;
   padding: 6px;
-  background-color: #fcba29;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,4 +135,14 @@ button.keyboard-character {
   font-weight: 700;
   color: black;
   cursor: pointer;
+}
+
+button.keyboard-character.red {
+  background-color: #ec5d49;
+}
+button.keyboard-character.yellow {
+  background-color: #fcba29;
+}
+button.keyboard-character.green {
+  background-color: #10a95b;
 }

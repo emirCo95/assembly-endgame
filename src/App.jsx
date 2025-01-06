@@ -10,6 +10,7 @@ import { languages } from './utils/languages';
 
 const App = () => {
   const [currentWord, setCurrentWord] = useState('');
+  const [gameStatus, setGameStatus] = useState('');
 
   useEffect(() => {
     fetch('https://random-word-api.herokuapp.com/word')
@@ -31,10 +32,10 @@ const App = () => {
   return (
     <main>
       <Header />
-      <Status />
+      <Status status={gameStatus} />
       <section className="language-container">{languageElements}</section>
       <Word word={currentWord} />
-      <Keyboard />
+      <Keyboard word={currentWord} />
     </main>
   );
 };
