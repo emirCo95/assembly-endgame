@@ -137,3 +137,12 @@ button.keyboard-character {
   color: black;
   cursor: pointer;
 }
+
+button.newGame-button {
+  width: 250px;
+  background-color: #11b5e5;
+  font-family: Hanken Grotesk, sans-serif;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1rem;
+}

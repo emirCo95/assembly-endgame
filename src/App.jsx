@@ -7,6 +7,7 @@ import Word from './components/Word';
 import Keyboard from './components/Keyboard';
 
 import { languages } from './utils/languages';
+import NewGameButton from './components/NewGameButton';
 
 const App = () => {
   const [currentWord, setCurrentWord] = useState('react');
@@ -35,6 +36,7 @@ const App = () => {
       <section className="language-container">{languageElements}</section>
       <Word word={currentWord} />
       <Keyboard />
+      <NewGameButton />
     </main>
   );
 };
