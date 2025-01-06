@@ -11,12 +11,20 @@ import NewGameButton from './components/NewGameButton';
 
 const App = () => {
   const [currentWord, setCurrentWord] = useState('react');
+  const [guessedLetters, setGuessedLetters] = useState([]);
 
   // useEffect(() => {
   //   fetch('https://random-word-api.herokuapp.com/word')
   //     .then((res) => res.json())
   //     .then((data) => setCurrentWord(data[0]));
   // }, []);
+
+  const handleUserGuess = (letter) => {
+    setGuessedLetters((prev) => {
+      return prev.includes(letter) ? prev : [...prev, letter];
+    });
+    console.log(guessedLetters);
+  };
 
   const languageElements = languages.map((language, idx) => {
     return (
@@ -35,7 +43,7 @@ const App = () => {
       <Status />
       <section className="language-container">{languageElements}</section>
       <Word word={currentWord} />
-      <Keyboard />
+      <Keyboard handleUserGuess={handleUserGuess} />
       <NewGameButton />
     </main>
   );
