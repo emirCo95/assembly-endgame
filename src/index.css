@@ -128,6 +128,7 @@ button.keyboard-character {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fcba29;
   border: 1px solid #d7d7d7;
   border-radius: 5px;
   font-size: 18px;
@@ -135,14 +136,4 @@ button.keyboard-character {
   font-weight: 700;
   color: black;
   cursor: pointer;
-}
-
-button.keyboard-character.red {
-  background-color: #ec5d49;
-}
-button.keyboard-character.yellow {
-  background-color: #fcba29;
-}
-button.keyboard-character.green {
-  background-color: #10a95b;
 }

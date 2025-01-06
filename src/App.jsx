@@ -9,14 +9,13 @@ import Keyboard from './components/Keyboard';
 import { languages } from './utils/languages';
 
 const App = () => {
-  const [currentWord, setCurrentWord] = useState('');
-  const [gameStatus, setGameStatus] = useState('');
+  const [currentWord, setCurrentWord] = useState('react');
 
-  useEffect(() => {
-    fetch('https://random-word-api.herokuapp.com/word')
-      .then((res) => res.json())
-      .then((data) => setCurrentWord(data[0]));
-  }, []);
+  // useEffect(() => {
+  //   fetch('https://random-word-api.herokuapp.com/word')
+  //     .then((res) => res.json())
+  //     .then((data) => setCurrentWord(data[0]));
+  // }, []);
 
   const languageElements = languages.map((language, idx) => {
     return (
@@ -32,10 +31,10 @@ const App = () => {
   return (
     <main>
       <Header />
-      <Status status={gameStatus} />
+      <Status />
       <section className="language-container">{languageElements}</section>
       <Word word={currentWord} />
-      <Keyboard word={currentWord} />
+      <Keyboard />
     </main>
   );
 };
