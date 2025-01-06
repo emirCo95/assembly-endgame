@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
 const Key = (props) => {
   return (
-    <button className={`keyboard-character`} onClick={props.handleUserGuess}>
+    <button
+      className={`keyboard-character ${props.className}`}
+      onClick={props.handleUserGuess}
+    >
       {props.char.toUpperCase()}
     </button>
   );

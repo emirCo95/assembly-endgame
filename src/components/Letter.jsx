@@ -2,7 +2,11 @@
 const Letter = (props) => {
   return (
     <div className="word-character-container">
-      <span className="word-character">{props.char.toUpperCase()}</span>
+      <span className="word-character">
+        {props.guessedLetters.includes(props.char)
+          ? props.char.toUpperCase()
+          : ' '}
+      </span>
     </div>
   );
 };

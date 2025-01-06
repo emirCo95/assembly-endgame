@@ -138,6 +138,14 @@ button.keyboard-character {
   cursor: pointer;
 }
 
+button.correct {
+  background-color: #10a95b;
+}
+
+button.wrong {
+  background-color: #ec5d49;
+}
+
 button.newGame-button {
   width: 250px;
   background-color: #11b5e5;
