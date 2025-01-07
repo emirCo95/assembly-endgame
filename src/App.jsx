@@ -13,6 +13,10 @@ const App = () => {
   const [currentWord, setCurrentWord] = useState('react');
   const [guessedLetters, setGuessedLetters] = useState([]);
 
+  const wrongGuessCount = guessedLetters.filter(
+    (letter) => !currentWord.includes(letter)
+  ).length;
+
   useEffect(() => {
     fetch('https://random-word-api.herokuapp.com/word')
       .then((res) => res.json())
