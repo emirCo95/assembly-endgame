@@ -8,6 +8,7 @@ import Keyboard from './components/Keyboard';
 
 import { languages } from './utils/languages';
 import NewGameButton from './components/NewGameButton';
+import clsx from 'clsx';
 
 const App = () => {
   const [currentWord, setCurrentWord] = useState('react');
@@ -30,9 +31,12 @@ const App = () => {
   };
 
   const languageElements = languages.map((language, idx) => {
+    const isLanguageLost = idx < wrongGuessCount;
+    const className = clsx('language-box', isLanguageLost && 'lost');
     return (
       <Language
         key={idx}
+        className={className}
         name={language.name}
         backgroundColor={language.backgroundColor}
         color={language.color}

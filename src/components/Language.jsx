@@ -6,7 +6,7 @@ const Language = (props) => {
   };
 
   return (
-    <div style={styles} className="language-box">
+    <div style={styles} className={props.className}>
       {props.name}
     </div>
   );
